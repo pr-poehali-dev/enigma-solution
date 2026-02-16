@@ -1,30 +1,30 @@
 import { useEffect, useRef, useState } from "react"
-import { Home, Building, Armchair, Trees } from "lucide-react"
+import { Palette, Layout, Pen, Monitor } from "lucide-react"
 import { HighlightedText } from "./HighlightedText"
 
 const expertiseAreas = [
   {
-    title: "Жилая архитектура",
-    description: "Создаем дома, которые сочетают красоту с комфортом, где каждое пространство служит и форме, и функции.",
-    icon: Home,
-  },
-  {
-    title: "Коммерческие объекты",
-    description:
-      "Проектируем рабочие пространства, которые вдохновляют на продуктивность и отражают ценности передовых организаций.",
-    icon: Building,
-  },
-  {
     title: "Дизайн интерьеров",
-    description:
-      "Создаем интерьеры, которые гармонируют с архитектурной оболочкой, формируя целостный пространственный опыт.",
-    icon: Armchair,
+    description: "Жилые и коммерческие пространства, где каждая деталь продумана. От концепции до реализации — с душой и вниманием к стилю.",
+    icon: Palette,
   },
   {
-    title: "Градостроительство",
+    title: "Брендинг и айдентика",
     description:
-      "Формируем сообщества через продуманную интеграцию общественных пространств, зданий и природных элементов.",
-    icon: Trees,
+      "Логотипы, фирменный стиль и визуальные системы, которые делают бренд узнаваемым и запоминающимся на рынке.",
+    icon: Pen,
+  },
+  {
+    title: "Веб-дизайн",
+    description:
+      "Современные сайты и цифровые продукты с чистым интерфейсом, продуманной навигацией и сильной визуальной подачей.",
+    icon: Monitor,
+  },
+  {
+    title: "Графический дизайн",
+    description:
+      "Полиграфия, упаковка, презентации и рекламные материалы. Визуальные решения, которые работают на результат.",
+    icon: Layout,
   },
 ]
 
@@ -57,14 +57,14 @@ export function Expertise() {
     <section id="services" ref={sectionRef} className="py-32 md:py-29">
       <div className="container mx-auto px-6 md:px-12">
         <div className="max-w-3xl mb-20">
-          <p className="text-muted-foreground text-sm tracking-[0.3em] uppercase mb-6">Наши услуги</p>
+          <p className="text-muted-foreground text-sm tracking-[0.3em] uppercase mb-6">Направления</p>
           <h2 className="text-6xl font-medium leading-[1.15] tracking-tight mb-6 text-balance lg:text-8xl">
-            <HighlightedText>Экспертиза</HighlightedText>, отточенная
+            <HighlightedText>Таланты</HighlightedText> для любых
             <br />
-            практикой
+            задач
           </h2>
           <p className="text-muted-foreground text-lg leading-relaxed">
-            Каждый проект опирается на десятилетия совокупного опыта, создавая архитектуру, которая одновременно инновационна и вневременна.
+            На платформе представлены дизайнеры разных направлений — от интерьеров до цифровых продуктов. Найдите специалиста под свой проект.
           </p>
         </div>
 
