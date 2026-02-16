@@ -8,7 +8,7 @@ const projects = [
     category: "Интерьер",
     location: "Дизайнер: Алина Морозова",
     year: "2024",
-    image: "/images/hously-1.png",
+    image: "https://cdn.poehali.dev/projects/1e40e16d-f5bd-4500-83d3-710c781c5f49/files/0ecfa1e9-c37c-4441-8b86-6ba08f969cbc.jpg",
   },
   {
     id: 2,
@@ -16,7 +16,7 @@ const projects = [
     category: "Брендинг",
     location: "Дизайнер: Максим Волков",
     year: "2024",
-    image: "/images/hously-2.png",
+    image: "https://cdn.poehali.dev/projects/1e40e16d-f5bd-4500-83d3-710c781c5f49/files/aa84cc0b-2dff-46fa-ab25-fe32c420e559.jpg",
   },
   {
     id: 3,
@@ -24,7 +24,7 @@ const projects = [
     category: "Интерьер",
     location: "Дизайнер: Екатерина Лис",
     year: "2023",
-    image: "/images/hously-3.png",
+    image: "https://cdn.poehali.dev/projects/1e40e16d-f5bd-4500-83d3-710c781c5f49/files/ed34ca2e-25d5-4ebc-909c-57d98cb095a8.jpg",
   },
   {
     id: 4,
@@ -32,7 +32,7 @@ const projects = [
     category: "Веб-дизайн",
     location: "Дизайнер: Артём Краснов",
     year: "2024",
-    image: "/images/hously-4.png",
+    image: "https://cdn.poehali.dev/projects/1e40e16d-f5bd-4500-83d3-710c781c5f49/files/3c6e9946-3ffd-4095-84ed-8d6411049acf.jpg",
   },
 ]
 

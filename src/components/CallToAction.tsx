@@ -1,7 +1,11 @@
+import { useState } from "react"
 import { ArrowRight } from "lucide-react"
 import { HighlightedText } from "./HighlightedText"
+import { DesignerForm } from "./DesignerForm"
 
 export function CallToAction() {
+  const [formOpen, setFormOpen] = useState(false)
+
   return (
     <section id="contact" className="py-32 md:py-29 bg-foreground text-primary-foreground">
       <div className="container mx-auto px-6 md:px-12">
@@ -26,15 +30,19 @@ export function CallToAction() {
               Найти дизайнера
               <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
             </a>
-            <a
-              href="#"
+            <button
+              onClick={() => setFormOpen(true)}
               className="inline-flex items-center justify-center gap-2 border border-primary-foreground/30 px-8 py-4 text-sm tracking-wide hover:bg-primary-foreground/10 transition-colors duration-300"
             >
               Стать дизайнером
-            </a>
+            </button>
           </div>
         </div>
       </div>
+
+      <DesignerForm open={formOpen} onClose={() => setFormOpen(false)} />
     </section>
   )
 }
+
+export default CallToAction
